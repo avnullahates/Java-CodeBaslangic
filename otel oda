@@ -49,3 +49,15 @@ public class otel {
 System.out.println(misafir_bilgisi);
 }
 }
+
+public class Calistir {
+    public static void main(String[] args) {
+            otel o1= new otel("Avnullah Mansur" , "Ates", "1");
+            otel o2= new otel("Cengiz", "At", "2");
+            otel o3= new otel("Mustafa", "Guzel", "3");
+            o1.cikti();
+            o2.cikti();
+            o3.cikti();
+            System.out.print("Otelimizdeki misafir sayisi= " +otel.getMisafir_sayisi());
+    
+    }}
