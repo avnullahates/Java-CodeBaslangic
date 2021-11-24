@@ -1,0 +1,51 @@
+public class otel {
+    private static int misafir_sayisi=0;
+    private String misafir_adi;
+    private String misafir_soyadi;
+    private String oda_adi;
+
+    
+
+    public static int getMisafir_sayisi() {
+        return misafir_sayisi;
+    }
+
+    public static void setMisafir_sayisi(int misafir_sayisi) {
+        otel.misafir_sayisi = misafir_sayisi;
+    }
+
+    public String getMisafir_adi() {
+        return misafir_adi;
+    }
+
+    public void setMisafir_adi(String misafir_adi) {
+        this.misafir_adi = misafir_adi;
+    }
+
+    public String getMisafir_soyadi() {
+        return misafir_soyadi;
+    }
+
+    public void setMisafir_soyadi(String misafir_soyadi) {
+        this.misafir_soyadi = misafir_soyadi;
+    }
+
+    public String getOda_adi() {
+        return oda_adi;
+    }
+
+    public void setOda_adi(String oda_adi) {
+        this.oda_adi = oda_adi;
+    }
+    
+    public otel(String misafir_adi, String misafir_soyadi, String oda_adi) {
+        this.misafir_adi = misafir_adi;
+        this.misafir_soyadi = misafir_soyadi;
+        this.oda_adi = oda_adi;
+        misafir_sayisi++;
+    }
+    public void cikti(){
+    String misafir_bilgisi= misafir_adi+" "+misafir_soyadi+" otelimize "+oda_adi+ " numarali odaya yerlesti.";
+System.out.println(misafir_bilgisi);
+}
+}
