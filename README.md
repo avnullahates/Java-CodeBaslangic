@@ -1,1 +1,1 @@
-# Oteloda-java
+# Java codes
